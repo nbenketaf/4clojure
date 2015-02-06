@@ -1,3 +1,2 @@
-(fn [coll] (filter odd? coll))
-
+;; Find the odd numbers
 filter odd?
