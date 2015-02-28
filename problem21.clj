@@ -8,5 +8,3 @@
 
 ;; Working solution
 #(get (vec %1) %2)
-
-
