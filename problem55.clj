@@ -1,1 +1,2 @@
-#(reduce (fn [occurences x] (assoc occurences x (inc (get occurences x 0)))) {} %)
+;; Count Occurrences
+reduce #(assoc % %2 (inc (% %2 0))) {}

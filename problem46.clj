@@ -1,2 +1,2 @@
 ;; Flipping out
-(fn [f] (fn [a b] (f b a)))
+#(fn [a b] (% b a))

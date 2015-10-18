@@ -5,5 +5,4 @@
 #(->
   (split-at (mod %1 (count %2)) %2)
   reverse
-  flatten
-  )
+  flatten)
