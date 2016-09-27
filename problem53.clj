@@ -22,12 +22,12 @@
                       (conj % %2)
                       [%2]) [])
        (filter #(< 1 (count %)))
-       (apply max-key count [])))
+       (apply max-key key [])))
 
 ;; Nice solution from Ofournier :-)
 (fn [l]
   (->> l
-       (map  #(list (- %2 %) %2) (range))
+       (map #(list (- %2 %) %2) (range))
        (partition-by first)
        (filter #(< 1 (count %)))
        (apply max-key count [])
